@@ -6,7 +6,6 @@ public class EjemploCiclosFor {
 		for  (int contador = 0 ; contador <= 10 ; contador++) {
 			System.out.println(contador);
 		}
-		
 	}
 
 }

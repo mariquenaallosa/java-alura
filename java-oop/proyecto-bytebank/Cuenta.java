@@ -7,4 +7,7 @@ public class Cuenta{
 	String titular;
 	
 	
+	public void depositar(double dinero){
+		saldo += dinero;
+	}
 }

@@ -7,7 +7,11 @@ public class Cuenta{
 	String titular;
 	
 	
-	public void depositar(double dinero){
-		saldo += dinero;
+	public void depositar(double saldo){
+		// Esta cuenta    Esta cuenta
+		// this account  this account
+		// this object
+		
+		this.saldo        =       this.saldo     + saldo;
 	}
 }

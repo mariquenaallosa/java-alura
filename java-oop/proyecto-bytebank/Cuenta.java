@@ -12,17 +12,28 @@ public class Cuenta {
 		// this account this account
 		// this object
 
-		this.saldo = this.saldo + saldo;
+		this.saldo += saldo;
 	}
 
 	// Retorna valor
 	public boolean retirar(double valor) {
 		if (this.saldo >= valor) {
-			this.saldo = this.saldo - valor;
+			this.saldo -=  valor;
 			return true;
 		} else {
 			return false;
 		}
 	}
-
+		
+	boolean transferir (double valor, Cuenta cuenta ) { 
+		if(this.saldo >= valor){
+			this.saldo -= valor;
+			cuenta.saldo += valor;
+			return true;
+		}else {
+			return false;
+		}
+		
+	}
+	
 }

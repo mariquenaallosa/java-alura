@@ -13,7 +13,23 @@ public class PruebaMétodos {
 	
 	
 	
-	
+		Cuenta cuentaJimena = new Cuenta();
+		cuentaJimena.saldo = 1000;
+		System.out.println("Saldo Diego: " + cuentaDiego.saldo);
+		System.out.println("Saldo Jimena: " + cuentaJimena.saldo);	
+		
+		boolean puedeTransferir = cuentaJimena.transferir(400, cuentaDiego);
+		
+		if(puedeTransferir) {
+			System.out.println("transferencia exitosa");
+		}else {
+			System.out.println("transferencia fallida");
+		}
+		
+		
+		System.out.println(cuentaDiego.saldo);
+		
+		
 	
 	}
 	

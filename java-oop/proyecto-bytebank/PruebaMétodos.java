@@ -7,6 +7,14 @@ public class PruebaMétodos {
 		System.out.println(cuentaDiego.saldo);
 		cuentaDiego.depositar(500);
 		System.out.println(cuentaDiego.saldo);
+	
+		cuentaDiego.retirar(100);
+		System.out.println(cuentaDiego.saldo);		
+	
+	
+	
+	
+	
 	}
 	
 

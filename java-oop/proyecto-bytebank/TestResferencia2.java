@@ -4,22 +4,22 @@ public class TestResferencia2 {
 	public static void main(String[] args) {
 		
 		Cliente diego = new Cliente();
-		diego.nombre = "Diego";
-		diego.documento = "34567846";
-		diego.telefono = "9993948372";
+		diego.setNombre("Diego");
+		diego.setDocumento("34567846");
+		diego.setTelefono("9993948372");
 		
 		
 		Cuenta cuentaDiego = new Cuenta();
-		cuentaDiego.agencia = 1 ;
-		cuentaDiego.numero = 453;
-		cuentaDiego.saldo = 200;
-		cuentaDiego.titular = diego;
+		cuentaDiego.setAgencia(1) ;
+		cuentaDiego.setNumero(453);
+		cuentaDiego.depositar(200);
+		cuentaDiego.setTitular(diego);
 		
 		
-		System.out.println(cuentaDiego.titular.documento);
+		System.out.println(cuentaDiego.getTitular().getDocumento());
 		
 		// Llevan a la misma referencia
-		System.out.println(cuentaDiego.titular);
+		System.out.println(cuentaDiego.getTitular());
 		System.out.println(diego);
 	}
 

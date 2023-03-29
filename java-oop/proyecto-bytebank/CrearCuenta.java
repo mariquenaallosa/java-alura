@@ -5,15 +5,15 @@ public class CrearCuenta {
 		// Variable            valor
 		// la varibale es la referencia a un lugar en la variable
 		Cuenta primeraCuenta = new Cuenta();
-		primeraCuenta.saldo = 1000;
+		primeraCuenta.depositar(1000);
 		// primeraCuenta.pais = "Peru"; NO COMPILA
 		
-		System.out.println(primeraCuenta.saldo);
+		System.out.println(primeraCuenta.getSaldo());
 		
 		Cuenta segundaCuenta = new Cuenta();
-		segundaCuenta.saldo = 500;
-		System.out.println(segundaCuenta.saldo);
-		System.out.println(primeraCuenta.saldo);
+		segundaCuenta.depositar(500);
+		System.out.println(segundaCuenta.getSaldo());
+		System.out.println(primeraCuenta.getSaldo());
 		
 		
 		// Al pedir los objetos vemos que tienen diferentes espacios en memoria 

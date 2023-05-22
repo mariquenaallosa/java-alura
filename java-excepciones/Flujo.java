@@ -8,11 +8,16 @@ public class Flujo {
 
 	public static void metodo1() {
 		System.out.println("Inicio de metodo1");
-		metodo2();
+		try {
+			metodo2();
+		}catch(MiException me){
+			me.printStackTrace();
+			
+		}
 		System.out.println("Fin de metodo1");
 	}
 
-	public static void metodo2() {
+	public static void metodo2() throws MiException {
 		System.out.println("Inicio de metodo2");
 		/*
 		for (int i = 1; i <= 5; i++) {
@@ -46,9 +51,8 @@ public class Flujo {
 		 * */
 		
 		// Tradicionalmente no se hace como muestra arriba , sino que lo que hacemos es lanzar directamente la excepcion
-		Cuenta cuenta  = new Cuenta();
-		 throw new ArithmeticException();
+		 throw new MiException("Mi excepción fue lanzada");
 		 
-		 // Thow sólo se puede hacer de objetos que son exepciones , no va a funcionar con otro tipo de objeto
+		 // Thow sólo se puede hacer de objetos que son excepciones , no va a funcionar con otro tipo de objeto
 	}
 }

@@ -30,7 +30,6 @@ public class Curso {
 		return this.nombre;
 		
 	}
-	
-	
+
 
 }

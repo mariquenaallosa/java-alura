@@ -36,7 +36,9 @@ public class Clase16 {
 
         // ITERATOR
         Iterator<Alumno> alumnoIterator = curso1.getAlumnos().iterator();
+        // hasNext() -> para validar si existen valores para reccorrer
         while (alumnoIterator.hasNext()){
+            //next() -> usado para recorrer los valores de un Iterator.
             System.out.println(alumnoIterator.next());
         }
 

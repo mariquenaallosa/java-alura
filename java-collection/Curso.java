@@ -9,6 +9,8 @@ public class Curso {
     private Collection<Alumno> alumnos = new HashSet<>();
     //private Collection<Alumno> alumnos = new LinkedHashSet<>();
     private Map<String, Alumno> alumnoMap = new HashMap<>();
+    //Al utilizar LinkedHAshMap se adiciona en orden
+    //private Map<String, Alumno> alumnoMap = new LinkedHashMap<>();
 
     public Curso(String nombre, int tiempo) {
         this.nombre = nombre;

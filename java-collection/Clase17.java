@@ -6,6 +6,7 @@ import com.alura.model.Curso;
 import java.util.Collection;
 import java.util.HashSet;
 import java.util.Iterator;
+import java.util.NoSuchElementException;
 
 public class Clase17 {
 
@@ -45,5 +46,10 @@ public class Clase17 {
 
          // alumnoIterator.next();
         // genera error porque excede el límite.
+        try {
+            alumnoIterator.next();
+        } catch (NoSuchElementException e){
+            System.out.println("No Existe");
+        }
     }
 }
